@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lozial Company for Multiple Commercial Activities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            color: #fff;
+        }
+        header img {
+            height: 50px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .language-selector a {
+            margin: 0 5px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .banner {
+            background: url('banner.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Lozial Company Logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#consulting">Consulting</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="language-selector">
+                <a href="#" onclick="setLanguage('en')">English</a> | 
+                <a href="#" onclick="setLanguage('ar')">العربية</a> | 
+                <a href="#" onclick="setLanguage('zh')">中文</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="banner">
+            <h1>
+                <span class="lang en">Bridging Continents with Quality Sudanese Agricultural Products</span>
+                <span class="lang ar hidden">جسر القارات بمنتجات زراعية سودانية عالية الجودة</span>
+                <span class="lang zh hidden">用优质苏丹农产品连接各大洲</span>
+            </h1>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p class="lang en">Lozial Company for Multiple Commercial Activities specializes in the export of Sudanese agricultural products and provides trade consulting services. Founded by Mohamed Al-Zain, we are dedicated to bridging continents with quality products and professional consulting services.</p>
+        <p class="lang ar hidden">شركة لوزيال للأنشطة التجارية المتعددة متخصصة في تصدير المنتجات الزراعية السودانية وتقديم خدمات الاستشارات التجارية. تأسست على يد محمد الزين، ونحن ملتزمون بجسر القارات بمنتجات عالية الجودة وخدمات استشارية احترافية.</p>
+        <p class="lang zh hidden">洛齐亚多元商业活动公司专注于出口苏丹农产品，并提供贸易咨询服务。由穆罕默德·阿尔-扎因创立，我们致力于通过优质产品和专业咨询服务连接各大洲。</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p class="lang en">Import and Export Services</p>
+        <p class="lang ar hidden">خدمات الاستيراد والتصدير</p>
+        <p class="lang zh hidden">进出口服务</p>
+        <p class="lang en">Trade Consulting Services</p>
+        <p class="lang ar hidden">خدمات الاستشارات التجارية</p>
+        <p class="lang zh hidden">贸易咨询服务</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <ul>
+            <li><span class="lang en">Cotton</span><span class="lang ar hidden">القطن</span><span class="lang zh hidden">棉花</span></li>
+            <li><span class="lang en">Peanuts</span><span class="lang ar hidden">الفول السوداني</span><span class="lang zh hidden">花生</span></li>
+            <li><span class="lang en">Sesame</span><span class="lang ar hidden">السمسم</span><span class="lang zh hidden">芝麻</span></li>
+            <li><span class="lang en">Gum Arabic</span><span class="lang ar hidden">الصمغ العربي</span><span class="lang zh hidden">阿拉伯树胶</span></li>
+        </ul>
+    </section>
+
+    <section id="consulting">
+        <h2>Consulting Services</h2>
+        <p class="lang en">Information about our trade consulting services, benefits, and areas of expertise.</p>
+        <p class="lang ar hidden">معلومات حول خدمات الاستشارات التجارية الخاصة بنا، والفوائد، ومجالات الخبرة.</p>
+        <p class="lang zh hidden">有关我们的贸易咨询服务、优势和专长领域的信息。</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong class="lang en">Address:</strong> <span class="lang en">Sudan, Port Sudan | UAE, Dubai</span> <span class="lang ar hidden">السودان، بورتسودان | الإمارات، دبي</span> <span class="lang zh hidden">苏丹，苏丹港 | 阿联酋，迪拜</span></p>
+        <p><strong class="lang en">Email:</strong> <a href="mailto:laoshialzain@yahoo.com">laoshialzain@yahoo.com</a></p>
+        <form action="submit_form.php" method="post">
+            <label for="name" class="lang en">Name:</label>
+            <label for="name" class="lang ar hidden">الاسم:</label>
+            <label for="name" class="lang zh hidden">姓名:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email" class="lang en">Email:</label>
+            <label for="email" class="lang ar hidden">البريد الإلكتروني:</label>
+            <label for="email" class="lang zh hidden">电子邮件:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message" class="lang en">Message:</label>
+            <label for="message" class="lang ar hidden">الرسالة:</label>
+            <label for="message" class="lang zh hidden">留言:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="lang en">Send</button>
+            <button type="submit" class="lang ar hidden">إرسال</button>
+            <button type="submit" class="lang zh hidden">发送</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lozial Company for Multiple Commercial Activities</p>
+    </footer>
+
+    <script>
+        function setLanguage(language) {
+            var elements = document.querySelectorAll('.lang');
+            elements.forEach(function(element) {
+                element.classList.add('hidden');
+            });
+            var selectedElements = document.querySelectorAll('.' + language);
+            selectedElements.forEach(function(element) {
+                element.classList.remove('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
